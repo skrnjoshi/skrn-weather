@@ -1,0 +1,73 @@
+/* Search Form Styles */
+.search-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.search-box {
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 15px 20px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-button {
+  background-color: #4d8cff;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #2e6ddb;
+}
+
+/* Suggestions dropdown */
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  margin-top: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+}
+
+.suggestion-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+  text-align: left;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.suggestion-item:hover {
+  background-color: #f5f8ff;
+}
